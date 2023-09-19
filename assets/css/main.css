@@ -3787,7 +3787,7 @@ input, select, textarea {
 			}
 
 			#main > .post header.major > h1, #main > .post header.major h2 {
-				font-size: 4rem;
+				font-size: 2.5rem;
 				line-height: 1.1;
 				margin: 0 0 2rem 0;
 			}
@@ -4383,9 +4383,12 @@ input, select, textarea {
 		}
 
 	#copyright {
+		background-color: hsla(0, 0%, 0%, 0.70);
+		border-radius: 5px;
+		padding: 1.2rem;
 		color: #ffffff;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
+		color: rgba(255, 255, 255, 0.35);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
