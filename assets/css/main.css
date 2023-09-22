@@ -2945,7 +2945,7 @@ input, select, textarea {
 		}
 
 		header.major {
-			margin: 0 0 4rem 0;
+			margin: 0 0 0 0;
 			text-align: center;
 		}
 
@@ -3310,7 +3310,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		/* min-height: 100vh; */
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -4397,7 +4397,7 @@ input, select, textarea {
 		line-height: 1.5;
 		text-align: center;
 		text-transform: uppercase;
-		margin: 4rem auto 8rem auto;
+		margin: 2rem auto 2rem auto;
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
@@ -4690,3 +4690,21 @@ input, select, textarea {
 		}
 
 	}
+
+/* Begin Custom CSS */
+
+
+.certifications {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(125px, 1fr)); 
+	gap: 10px;
+  }
+  
+  .certification {
+	max-width: 100%;
+  }
+  
+  .certification img {
+	max-width: 100%;
+	height: auto;
+  }
