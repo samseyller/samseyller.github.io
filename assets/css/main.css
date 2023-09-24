@@ -4708,3 +4708,19 @@ input, select, textarea {
 	max-width: 100%;
 	height: auto;
   }
+
+
+.edu-list {
+    list-style: none;
+}
+
+.edu-list li {
+    background-color: #f4f4f4; /* Background color */
+    border: 1px solid #ddd;   /* Border */
+    padding: 10px;            /* Padding for spacing */
+    margin-bottom: 5px;       /* Spacing between items */
+}
+
+.edu-list li h4 {
+	margin: 0;
+}
