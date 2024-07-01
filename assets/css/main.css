@@ -4726,3 +4726,9 @@ input, select, textarea {
 .edu-list li h4 {
 	margin: 0;
 }
+
+ul.no-bullets {
+	list-style-type: none; /* Remove bullets */
+	padding: 0; /* Remove padding */
+	margin: 0; /* Remove margins */
+  }
