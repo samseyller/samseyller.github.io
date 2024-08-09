@@ -4738,3 +4738,26 @@ span.cert-validation {
 	font-size:0.8em;
 	color:#909090;
 }
+
+.expandable {
+	cursor: pointer; 
+    position: relative; 
+    padding-right: 20px; 
+    line-height: 1.5; 
+}
+
+.expandable:hover {
+	text-decoration: underline;
+}
+
+.expandable::after {
+    content: ''; 
+    position: absolute; 
+    right: 0; 
+    top: 50%; 
+    width: 12px; 
+    height: 12px; 
+    background-image: url('/images/chevron.png'); 
+    background-size: cover; 
+    transform: translateY(-50%); 
+}
