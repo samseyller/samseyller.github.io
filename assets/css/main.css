@@ -4716,14 +4716,14 @@ input, select, textarea {
     list-style: none;
 }
 
-.edu-list li {
+.edu-list > li {
     background-color: #f4f4f4; /* Background color */
     border: 1px solid #ddd;   /* Border */
     padding: 10px;            /* Padding for spacing */
     margin-bottom: 5px;       /* Spacing between items */
 }
 
-.edu-list li h4 {
+.edu-list > li > h4, .edu-list > li > h3 {
 	margin: 0;
 }
 
@@ -4732,3 +4732,9 @@ ul.no-bullets {
 	padding: 0; /* Remove padding */
 	margin: 0; /* Remove margins */
   }
+
+span.cert-validation {
+	font-style: italic;
+	font-size:0.8em;
+	color:#909090;
+}
