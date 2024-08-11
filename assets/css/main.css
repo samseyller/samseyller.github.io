@@ -4711,6 +4711,13 @@ input, select, textarea {
 	height: auto;
   }
 
+.coursework {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); 
+	gap: 10px;
+	margin: 0 auto;
+}
+
 
 .edu-list {
     list-style: none;
@@ -4736,6 +4743,10 @@ ul.no-bullets {
 span.cert-validation {
 	font-style: italic;
 	font-size:0.8em;
+	color:#909090;
+}
+
+span.cert-validation a {
 	color:#909090;
 }
 
