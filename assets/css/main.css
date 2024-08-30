@@ -4701,6 +4701,12 @@ input, select, textarea {
 	margin: 0 auto;
 	max-width: 750px;
   }
+
+  @media screen and (max-width: 650px) {
+	.certifications {
+		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+	}
+}
   
   .certification {
 	max-width: 100%;
@@ -4716,6 +4722,24 @@ input, select, textarea {
 	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); 
 	gap: 10px;
 	margin: 0 auto;
+}
+
+@media screen and (max-width: 1680px) {
+	.coursework {
+		grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.coursework {
+		grid-template-columns: repeat(auto-fill, minmax(95%, 1fr)); 
+	}
+}
+
+@media screen and (max-width: 980px) {
+	.coursework {
+		gap: 5px;
+	}
 }
 
 
