@@ -4694,28 +4694,95 @@ input, select, textarea {
 /* Begin Custom CSS */
 
 
-.certifications {
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); 
-	gap: 10px;
+.certifications-tiered {
+	--cert-size-core: 180px;
+	--cert-size-practical: 170px;
+	--cert-size-cloud: 160px;
+	--cert-size-additional: 150px;
+	max-width: 900px;
 	margin: 0 auto;
-	max-width: 750px;
-  }
+}
 
-  @media screen and (max-width: 650px) {
-	.certifications {
-		grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); 
+.cert-tier {
+	margin-top: 1.6rem;
+	text-align: center;
+}
+
+.cert-tier:first-child {
+	margin-top: 0;
+}
+
+.cert-tier-title {
+	margin: 0 0 0.5rem;
+	font-size: 0.95rem;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+}
+
+.cert-tier-grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 0.8rem;
+}
+
+.certification {
+	width: var(--cert-size, 150px);
+	max-width: 100%;
+}
+
+.certification img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.tier-core {
+	--cert-size: var(--cert-size-core);
+}
+
+.tier-practical {
+	--cert-size: var(--cert-size-practical);
+}
+
+.tier-cloud {
+	--cert-size: var(--cert-size-cloud);
+}
+
+.tier-additional {
+	--cert-size: var(--cert-size-additional);
+}
+
+@media screen and (max-width: 736px) {
+	.certifications-tiered {
+		--cert-size-core: 160px;
+		--cert-size-practical: 150px;
+		--cert-size-cloud: 145px;
+		--cert-size-additional: 135px;
 	}
 }
-  
-  .certification {
-	max-width: 100%;
-  }
-  
-  .certification img {
-	max-width: 100%;
-	height: auto;
-  }
+
+@media screen and (max-width: 480px) {
+	.certifications-tiered {
+		--cert-size-core: 140px;
+		--cert-size-practical: 135px;
+		--cert-size-cloud: 130px;
+		--cert-size-additional: 120px;
+	}
+
+	.cert-tier {
+		margin-top: 1.5rem;
+	}
+
+	.cert-tier-title {
+		margin-bottom: 0.65rem;
+	}
+
+	.cert-tier-grid {
+		gap: 0.75rem;
+	}
+}
 
 .coursework {
 	display: grid;
