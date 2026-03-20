@@ -4885,3 +4885,64 @@ ul.checklist > li.checked {
       color: #222!important;
     }
 }
+
+@media screen and (min-width: 981px) {
+	#main > .posts > .full-width-desktop {
+		width: 100%;
+	}
+}
+
+
+.education-progress {
+	width: min(80%, 42rem);
+	height: 1.1rem;
+	margin-top: 0.25rem;
+	margin-bottom: 0;
+}
+
+.education-checklist {
+	display: inline-block;
+	width: auto;
+	margin: 0.75rem auto 0;
+	padding: 0;
+	font-size: medium;
+	text-align: left;
+}
+
+.education-checklist li {
+	position: relative;
+	margin: 0 0 0.85rem;
+	padding-left: 2rem;
+	line-height: 1.5;
+}
+
+.education-checklist li:last-child {
+	margin-bottom: 0;
+}
+
+.education-checklist li::before {
+	position: absolute;
+	left: 0;
+	top: 0.1rem;
+	content: '\2610';
+	color: #666;
+}
+
+.education-checklist li.checked::before {
+	content: '\2611';
+	color: #222;
+}
+
+@media screen and (min-width: 981px) {
+	.education-progress {
+		width: min(60%, 34rem);
+	}
+}
+
+
+@media screen and (min-width: 737px) and (max-width: 980px) {
+	#main > .posts > .full-width-desktop {
+		width: 100%;
+	}
+}
+
